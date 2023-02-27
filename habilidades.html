@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilidades</title>
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="icon" type="image/x-icon" href="/imagenes/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=M+PLUS+1:wght@500&family=Prompt:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+</head>
+<body>
+    <header class="flex-cabecera" id="cabecera">
+        <h2>Habilidades</h2>
+        <img src="/imagenes/raPerfil.jpg" alt="Foto de Perfil">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a  href="/index.html" title="Inicio"><span class="material-symbols-outlined">
+                home
+                </span></a></li>
+            <li><a href="/informacion-personal.html" title="Informacion Personal"><span class="material-symbols-outlined">
+                person_4
+                </span></a></li>
+            <li ><a href="/educacion.html" title="Estudios"><span class="material-symbols-outlined">
+                school
+                </span></a></li>
+            <li><a href="/experiencia.html" title="Trabajos Anteriores"><span class="material-icons">
+                work_history
+                </span></a></li>
+            <li class="active"><a href="/habilidades.html" title="Habilidades"><span class="material-icons">
+                co_present
+                </span></a></li>
+            <li style="float:right"><a href="/contacto.html" title="contacto"><span class="material-icons">
+                contacts
+                </span></a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Mis Habilidades</h2>
+            <section class="habilidades" id="habilidades">
+                <p>Comunicación efectiva</p> 
+                <p>Resolución de problemas</p> 
+                <p>Liderazgo</p> 
+                <p>Trabajo en equipo</p> 
+                <p>Adaptabilidad</p> 
+                <p>Pensamiento crítico</p> 
+                <p> Empatía</p>
+                <p> Creatividad</p>
+                <p> Innovación</p>
+                <p> Gestión del tiempo</p>
+            </section>
+
+    </section>
+
+    <script>
+		const habilidades = document.getElementById('habilidades');
+		const habilidadesArr = Array.from(habilidades.children);
+
+		habilidadesArr.forEach(habilidad => {
+			habilidad.addEventListener('click', () => {
+				alert(`¡Me siento capacitado en ${habilidad.textContent}!`);
+			});
+		});
+	</script>
+
+    
+
+    
+
+        
+           
+
+	
+
+   
+
+
+
+    
+
+    
+
+    
+</body>
+</html>

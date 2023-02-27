@@ -1,0 +1,263 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+header{
+    width: 100%;
+    border: 1px solid grey;
+    background-color: darkgrey;
+    text-align:center;
+    
+    
+}
+img{
+  width: 100px;
+}
+.flex-cabecera{/*Contenedor flexible*/
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+  .myButton {
+    color: rgb(255, 255, 255); font-size: 18px; line-height: 18px; padding: 6px; border-radius: 10px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;}
+    .myButton:hover {
+    background: #1C6EA4; }
+    .myButton:active {
+    background: #144E75; }
+
+
+h1{
+    
+    font-family: 'Lora', serif;
+    font-family: 'M PLUS 1', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    
+}
+
+
+/*Barra de navegacion*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+  }
+  /*li {/*Los elementos de la barra quedan en linea
+    display:inline-block;
+  }*/
+  li {/*Los elementos de la barra quedan flotantes*/
+    float: left;
+  }
+  li a {/*le damos estilo a los elementos a*/
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+    
+  }
+  
+ /* a {
+    display: block;
+    padding: 8px;
+    
+  }*/
+
+  li a:hover {/*Al pasar el mouse los elementos cambian de color*/
+    background-color: #111;
+  }
+  .active {/*Es para saber donde esta ubicado el usuario*/
+    background-color: #04AA6D;
+  }
+
+  section {
+    text-align: center;
+    margin-top: 20px;
+    
+  }
+ 
+  h2{
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 10px;
+  }
+  button{
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  span{
+    font-family: 'Lora', serif;
+    font-family: 'M PLUS 1', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+
+
+
+
+
+
+
+  #pie {
+    background-color: #F1F1F1;
+    text-align: center;
+    margin-top: 200px;
+    padding: 10px;
+  }
+
+  @media (max-width: 800px) {
+    .flex-cabecera {
+      flex-direction: column;
+    }
+  }
+
+  /*Informacion Personal*/
+.headerInfo{
+    margin-bottom: 2px;
+}
+
+.datos{
+    text-align: justify;
+    padding-left: 10px;
+    margin:10px 0 50px 30px;
+}
+
+p{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+.miBoton {
+  color: rgb(255, 255, 255); font-size: 16px; line-height: 16px; padding: 6px; border-radius: 10px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block; text-align: center;}
+
+  .miBoton:hover {
+  background: #1C6EA4; }
+
+  .miBoton:active {
+  background: #144E75; }
+
+
+
+ .home{
+    text-align: center;
+    padding-top: 5px;
+ }
+
+ /*Educacion*/
+ section dl{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+ }
+
+
+ /*Experiencia*/
+ table,th,td{
+  border: 1px, solid;
+  padding: 8px;
+  margin-bottom: 20px;
+ }
+ table{
+  border-spacing: 5px;
+  width: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ th{
+  background-color: #144E75;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+ }
+ caption{
+  font-size: 22px;
+  font-family: 'Lora', serif;
+  font-family: 'M PLUS 1', sans-serif;
+  font-family: 'Prompt', sans-serif;
+ }
+
+ /*Habilidades*/
+
+ #habilidades{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+  margin:10px;
+  font-family: 'Lora', serif;
+  font-family: 'M PLUS 1', sans-serif;
+  font-family: 'Prompt', sans-serif;
+ }
+
+ #habilidades p:before {
+  content: "\2022";
+  color: #007bff;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+#habilidades p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #007bff;
+}
+
+/*Contacto*/
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
